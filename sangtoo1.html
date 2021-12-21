@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel = "stylesheet" type = "text/css" href = "janfont.css">
+        <style>
+            .menu{
+                color: black;
+                font-size: 20px;
+                font-family: jalnan;
+                text-decoration: none;
+            }
+            .menu-active{
+                color:wheat;
+                font-size: 20px;    
+                font-family: jalnan;
+            }
+        </style>
+
+    </head>
+    <body bgcolor="#F5E2B7" align = "center">
+        <r2><h1>재료</h1></r2>
+        <a href="#" class = "menu" data-menu = "1">흰앙금 250g</a><p>
+        <a href="#" class = "menu" data-menu = "2">아몬드 가루 25g</a><p>
+        <a href="#" class = "menu" data-menu = "3">달걀 노른자 1개</a><p>
+        <a href="#" class = "menu" data-menu = "4">우유 1큰술</a><p>
+
+        <script type = "text/javascript">
+            var menuLinks = document.querySelectorAll('.menu');
+
+            function click_menu()
+            {
+                this.classList.add('menu-active');
+            }
+            
+            for(var i = 0; i < menuLinks.length;i++)
+            {
+                menuLinks[i].addEventListener('click', click_menu);
+            }
+        </script>
+    </body>
+
+</html> 

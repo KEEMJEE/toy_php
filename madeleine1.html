@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel = "stylesheet" type = "text/css" href = "janfont.css">
+        <style>
+            .menu{
+                color: black;
+                font-size: 20px;
+                font-family: jalnan;
+                text-decoration: none;
+            }
+            .menu-active{
+                color:wheat;
+                font-size: 20px;
+                font-family: jalnan;
+            }
+        </style>
+
+    </head>
+    <body bgcolor="#F5E2B7" align = "center">
+        <r2><h1>재료</h1></r2>
+        <a href="#" class = "menu" data-menu = "1">실온 달걀 74g</a><p>
+        <a href="#" class = "menu" data-menu = "2">꿀 6g</a><p>
+        <a href="#" class = "menu" data-menu = "3">박력분 55g</a><p>
+        <a href="#" class = "menu" data-menu = "4">베이킹 파우더 2g</a><p>
+        <a href="#" class = "menu" data-menu = "5">우유 7g</a><p>
+        <a href="#" class = "menu" data-menu = "6">설탕 65g</a><p>
+        <a href="#" class = "menu" data-menu = "7">바닐라익스트랙 1/2tsp</a><p>
+        <a href="#" class = "menu" data-menu = "8">아몬드 가루 26g</a><p>
+        <a href="#" class = "menu" data-menu = "9">녹인 무염버터 75g</a><p>
+
+        <script type = "text/javascript">
+            var menuLinks = document.querySelectorAll('.menu');
+
+            function click_menu()
+            {
+                this.classList.add('menu-active');
+            }
+            
+            for(var i = 0; i < menuLinks.length;i++)
+            {
+                menuLinks[i].addEventListener('click', click_menu);
+            }
+        </script>
+    </body>
+
+</html> 

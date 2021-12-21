@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'jalnan';
+    src: url('Jalnan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+t1{
+    font-size : 70px;
+    font-family: jalnan;
+    color : brown;
+}
+r1{
+    font-size: 20px;
+    font-family: jalnan;
+    color :wheat;
+}
+r2{
+    font-size: 20px;
+    font-family: jalnan;
+    color : black;
+}
+r3{
+    font-size: 20px;
+    font-family: jalnan;
+    color : black;
+    font-weight: lighter;
+}

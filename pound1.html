@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel = "stylesheet" type = "text/css" href = "janfont.css">
+        <style>
+            .menu{
+                color: black;
+                font-size: 20px;
+                font-family: jalnan;
+                text-decoration: none;
+            }
+            .menu-active{
+                color:wheat;
+                font-size: 20px;    
+                font-family: jalnan;
+            }
+        </style>
+
+    </head>
+    <body bgcolor="#F5E2B7" align = "center">
+        <r2><h1>재료</h1></r2>
+        <a href="#" class = "menu" data-menu = "1">밀가루(중력분/박력분) 2컵</a><p>
+        <a href="#" class = "menu" data-menu = "2">버터 170g</a><p>
+        <a href="#" class = "menu" data-menu = "3">설탕 3/4컵</a><p>
+        <a href="#" class = "menu" data-menu = "4">달걀(실온보관) 3개</a><p>
+        <a href="#" class = "menu" data-menu = "5">베이킹 소다 1/2작은술</a><p>
+        <a href="#" class = "menu" data-menu = "6">베이킹 파우더 1작은술</a><p>
+        <a href="#" class = "menu" data-menu = "7">바닐라에센스 5방울</a><p>
+        <a href="#" class = "menu" data-menu = "8">미림 1작은술</a><p>
+
+        <script type = "text/javascript">
+            var menuLinks = document.querySelectorAll('.menu');
+
+            function click_menu()
+            {
+                this.classList.add('menu-active');
+            }
+            
+            for(var i = 0; i < menuLinks.length;i++)
+            {
+                menuLinks[i].addEventListener('click', click_menu);
+            }
+        </script>
+    </body>
+
+</html> 
